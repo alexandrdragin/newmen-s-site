@@ -10,4 +10,8 @@
   @media #{$desktop-widths} {
     width: 1200px;
   }
+
+  @media #{$super-widths} {
+    width: 1920px;
+  }
 }

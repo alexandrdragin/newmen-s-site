@@ -1,0 +1,52 @@
+$bg-ligthtgrey: #FFFFFF;
+
+$mobile-widths: "(max-width:767px)";
+$tablet-widths: "(min-width:768px)";
+$desktop-widths: "(min-width:1200px)";
+$super-widths: "(min-width:1920px)";
+
+/*
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("fonts/ptsansbold.woff") format("woff");
+}*/
+
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 27px;
+  color: #333333;
+  font-style: normal;
+  box-sizing: border-box;
+
+  min-height: 2555px;
+
+  @media #{$tablet-widths} {
+    background: $bg-ligthtgrey url('/img/tablet.jpg') no-repeat center top / 768px auto;
+    min-height: 2900px;
+  }
+
+  @media #{$desktop-widths} {
+    background: $bg-ligthtgrey url('/img/Start.jpg') no-repeat center top / 1200px auto;
+    min-height: 2900px;
+  }
+
+  @media #{$super-widths} {
+    background: $bg-ligthtgrey url('/img/Start1920.png') no-repeat center top / 1920px auto;
+    min-height: 3250px;
+  }
+}
